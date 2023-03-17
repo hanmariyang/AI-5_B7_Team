@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}S.B.S{% endblock %}
+
+
+<!-- contents -->
+{% block contents %}
+
+
+<!-- <h1 style="color: red;">S.B.S</h1> -->
+<br>
+<br>
+<br>
+<a class="navbar-brand" href="/" ><img src='/static/img/sbs.png' style="width: 500px; height: 200px; margin: auto; display: block;"></a>
+
+<section class="profile_section">
+  <div class="crown"><img id="crown" src="static\img\crown.png"></div>
+  <div class="profile_box">
+    <div
+      class="profile_img1" 
+      onclick="location.href='/gmj'"
+    ></div>
+    <div
+      class="profile_img2"
+      onclick="location.href='/myo'"
+    ></div>
+    <div
+      class="profile_img3"
+      onclick="location.href='/wgw'"
+    ></div>
+  </div>
+</section>
+
+{% endblock %}

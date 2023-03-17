@@ -1,0 +1,93 @@
+/* home.html 에 있는 CSS*/
+
+/* 모든 body h1 태그에 적용됨 */
+
+*{
+  font-family: "Gowun Dodum", sans-serif, Helvetica;
+}
+
+body{
+  background-color: rgb(18,18,18);
+}
+
+h1 {
+  font-weight: bold;
+  color:white;
+  text-align: center;
+  font-size: 200px;
+}
+
+/* 헤더 */
+.black{
+  background-color: #000;
+  border-color: #000;
+}
+
+/* 헤더푸터를 제외한 body 부분 */
+.body{
+  width: 1600px;
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 80px;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  margin: 40px auto;
+}
+/* 푸터 */
+footer{
+  background-color: black;
+  height: 80px;
+  position: relative;
+  transform: translateY(50%);
+  /* position: sticky;
+  bottom: 0; */
+}
+/* 프로필 */
+.profile_section{
+  flex-direction: column;
+}
+/* 프로필이 있는 공간 */
+.profile_box {
+  display: flex;
+  height: 300px;
+  width: 1070px;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+
+}
+/* 프로필사진 */
+.profile_box>div{
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.profile_img1 {
+  background-image: url(https://ca.slack-edge.com/T043597JK8V-U04NKRTPDQF-7df8daae63ee-512);
+  
+}
+.profile_img2 {
+  background-image: url(https://ca.slack-edge.com/T043597JK8V-U04PJJV81AQ-f3d8bde4eb4a-512);
+
+}
+.profile_img3 {
+  background-image: url(https://ca.slack-edge.com/T043597JK8V-U04NZH1BG3U-16192aeb9f5d-512);
+
+}
+/* 순위왕관 */
+.crown{
+  width: 1070px;
+  margin: auto;
+  font-size: 45px;
+}
+
+#crown{
+  position: relative;
+  left: 130px;
+  background-color: gold;
+  border-radius: 18px;
+}

@@ -1,0 +1,27 @@
+/* base.html 에 있는 CSS*/
+
+/* 네비게이션 내부 */
+#myo_navbar_profile_box{
+    margin: 0;
+}
+
+
+#offcanvasDarkNavbar{
+    width: fit-content;
+    height: fit-content;
+}
+
+.offcanvas-body{
+    height: fit-content;
+    padding-bottom: 0;
+    
+}
+
+
+.offcanvas-body img{
+    width: 150px;
+}
+
+.offcanvas-title{
+    word-spacing: -2px;
+}

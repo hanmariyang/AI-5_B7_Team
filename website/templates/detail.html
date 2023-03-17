@@ -1,0 +1,126 @@
+{% extends "base.html" %} {% block title %}상세보기{% endblock %}
+
+<!-- contents -->
+{% block contents %}
+
+<div class="wrapper">
+  <div class="detail_zone">
+    <!-- 게시글이 보이는 공간 -->
+    <div class="detail_box" style="position: relative;top: 50px;">
+      <div class="img_box" style="background-image:url(/static/img/sbs.png); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+      <div class="description">
+        <div class="title_line">
+          <text class="title">SBS에게 덕담을..!</text>
+        </div>
+        <div class="content">
+          <text style="word-spacing: -5px;">안녕하세요 SBS조입니다!
+            게더타운 내 팀책상이 17이고 B-7조라서
+            <br>S(eventeen) B S(even) .....ㅎㅎ
+            <br>만화, 드라마, 영화로 묶인 조인데 그닥 잘 맞지는 않는 것 같아요;
+            <br>sbs 홈페이지처럼 해보려고 했는데 쉽지 않네요..
+            <br>하고 싶은 기능들을 다 구현하지 못해서 아쉬우니까 응원의 말들을 많이 남겨주세요!!</text>
+        </div>
+      </div>
+    </div> 
+
+    <!-- 댓글작성공간 -->
+    <div class="myo_comment">
+      <!-- 댓글을 보여주는 공간 -->
+      <div class="myo_comment_list" id="myo_comment_list">
+        <div class="myo_comment_inlist">
+          <div class="myo_comment_content">
+            <span>댓글내용 </span>
+          </div>
+          <div class="myo_comment_name">
+            <span>by 작성자 </span> <div><button>수정</button> <button>삭제</button></div> 
+          </div>
+        </div>
+      </div>
+
+      <!-- 댓글 작성 버튼이 있는 공간 -->
+      <div class="myo_comment_footer">
+        <!-- 댓글 작성 모달팝업버튼 -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#comment"
+          data-bs-whatever="@mdo"
+          id="myo_btn_comment"
+        ></button>
+        <!-- 모달팝업창 내부 -->
+        <div
+          class="modal fade"
+          id="comment"
+          tabindex="-1"
+          aria-labelledby="commentLabel"
+          aria-hidden="true"
+          style="display: none"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- 모달팝업창은 헤더와 바디, 푸터로 이루어져있다 -->
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="commentLabel">댓글작성</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <!-- 내용 -->
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control high"
+                      id="message-text"
+                      placeholder="댓글내용"
+                    ></textarea>
+                  </div>
+                  <!-- 작성자 -->
+                  <div class="mb-3" style="display: inline-block">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="작성자"
+                    />
+                  </div>
+                  <!-- 비밀번호 -->
+                  <!-- <div class="mb-3" style="display: inline-block">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="pw"
+                      placeholder="비밀번호"
+                    />
+                  </div> -->
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  취소
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="save_comment()"
+                >
+                  작성
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

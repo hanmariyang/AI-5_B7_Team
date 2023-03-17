@@ -1,0 +1,240 @@
+/* profile.html 에 있는 CSS */
+
+/* 배경 비디오 */
+
+.video {
+  position: relative;
+  top: 15px;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  /* background-color: aqua; */
+}
+
+video {
+  position: absolute;
+  max-width: 1600px;
+  /* margin: auto; */
+}
+
+/* 비디오 안 쪽 */
+.video_inner {
+  position: relative;
+  width: 800px;
+  height: 900px;
+  background-image: linear-gradient(deg90,#333 5%,#181818 95%);
+  background-color:black;
+  opacity: 0.7;
+}
+
+/* 이름 */
+.video_inner > div > text {
+  font-weight: bold;
+  font-size: 200px;
+  position: relative;
+  left: 50px;
+  top: 200px;
+  opacity: 70%;
+  color: white;
+}
+
+
+
+/* 비디오 안 버튼들 */
+
+.buttons{
+  position: relative;
+  top: 150px;
+}
+
+
+
+.github {
+  width: 70px;
+  height: 70px;
+  background-image: url(/static/img/github.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 400px;
+  position: relative;
+  left: 70px;
+  top: -15px;
+  opacity: 0.9;
+  border: none;
+  box-shadow: 0 0 8px #d9d9d9;
+
+}
+
+.like {
+  width: 70px;
+  height: 70px;
+  background-image: url(/static/img/like.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 200px;
+  position: relative;
+  left: 80px;
+  top: -15px;
+  opacity: 0.9;
+  border: none;
+  box-shadow: 0 0 8px #d9d9d9;
+}
+
+.mute {
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+  background-image: url(/static/img/mute.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 200px;
+  position: relative;
+  left: 900px;
+  top: -15px;
+  opacity: 0.9;
+  box-shadow: 0 0 8px #d9d9d9;
+  border: none;
+}
+
+.mbti {
+  text-align: center;
+  justify-items: center;
+  justify-content: center; /* 수평 중앙 정렬 */
+
+  background-image: linear-gradient(90deg,#333 5%,#181818 95%);
+  background-size: contain;
+
+  /* border-radius: 5px; */
+  width: 350px;
+  height: 100px;
+  opacity: 1;
+  position: relative;
+  left: 2%;
+  top: 20px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 0 8px #d9d9d9;
+
+
+  font-size: 100px;
+  font-weight: 1000;
+}
+
+.introduce{
+  position: relative;
+  top:20px;
+  width: 740px;
+  height:250px;
+  background-image: linear-gradient(90deg,#333 5%,#181818 95%);
+  padding: 20px;
+  color: whitesmoke;
+  box-shadow: 0 0 8px #d9d9d9;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+
+
+
+
+/* MBTI 설명 안보임 */
+.mbti_disc_off {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  opacity: 0;
+}
+/* MBTI 설명 보임 */
+.mbti_disc_on {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  left: 5%;
+  top: 180px;
+  opacity: 1;
+}
+
+/* 소개부분 */
+
+.mmyo_content {
+  position: relative;
+  left: -100px;
+  width: 1600px;
+  display: block;
+  padding-bottom: 50px;
+}
+
+/* TMI Zone */
+.tmis {
+  display: inline-block;
+  position: relative;
+  left: 140px;
+  top: 40px;
+  color: white;
+  width: fit-content;
+  background-color: black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.tmi {
+  display: inline-block;
+  text-align: left;
+  font-size: 50px;
+}
+
+.tmi p {
+  font-size: 50px;
+  letter-spacing:-3px;
+}
+
+/* 취미 특기 좌우명 */
+.hobby {
+  letter-spacing:-3px;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+  /* opacity: 0.8; */
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  left: 500px;
+  top: 10px;
+  /* top: -200px; */
+  text-align: left;
+  font-size: 30px;
+  color: white;
+}
+
+/* 작성글부분 */
+
+.posts {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  display: block;
+  margin: auto;
+}
+
+.myo_line{
+  background-image: linear-gradient(90deg,#333 5%,#181818 95%);
+  display: flex;
+  color: white;
+  font-size: larger;
+  position: relative;
+  top: 20px;
+
+}
+.myo_logo{
+  margin: 10px 10px 10px 25px;
+  background-image: url(/static/img/sbs.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 45px;
+}

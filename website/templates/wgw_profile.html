@@ -1,0 +1,165 @@
+{% extends "base.html" %} {% block title %}왕규원 프로필{% endblock %}
+
+<!-- contents -->
+{% block contents %}
+
+<!-- 백그라운드 동영상 -->
+<div class="last">
+  <section class="video">
+    <video loop autoplay muted width="100%" src="static\img\panda.mp4" id="video"></video>
+
+    <section class="video_inner">
+      <!-- 이름 -->
+      <div><text>왕규원</text></div>
+      <!-- 버튼들 -->
+      <ul class="buttons">
+        <button class="mbti" id="mbti"><text style="position: relative; top: -30px;">#ENTP</text></button>
+        <button class="github" onclick="window.open('http://github.com/King-gyu');"></button>
+        <button class="like" onclick="location.href='/detail';"></button>
+        <!-- <button class="mute" onclick="mute()"></button> -->
+        <div class="introduce">
+          <div style="font-size:x-large">
+            #S.B.S조 #ENTP #스파르타 #영화 #드라마 #만화
+          </div>
+          <br>안녕하세요. 저는 왕규원입니다.
+          <br>MBTI는 쉽게 바뀔 수 있대요! ENFP랑 ENTP가 번갈아 나오는 중
+          <br>처음이라 그런가 코딩이 너무 어려워요...
+        </div>
+      </ul>
+      <!-- <div class="mbti_disc_off" id="mbti_disc" style="background-image: url(https://s3.ap-northeast-2.amazonaws.com/cdn.supremestudyabroadtool.com/20220519/GtKU0NSTF3WrWQp.png);"></div> -->
+    </section>
+  </section>
+</div>
+
+<div class="myo_line">
+  <div class="myo_logo"></div>
+  <text style="display: block; position: relative; top: 15px;">유제한으로 즐기세요</text>
+</div>
+
+
+<section class="mmyo_content">
+  <!-- 동영상 앞 -->
+  <div class="tmis">
+    <P class="tmi">TMI</P>
+    <br>
+    <p>★ ENTP가 한국에서 되게 희귀한 MBTI라는데 팀장님이 ENTP시네요 신기방기</p>
+    <p>★ 사실 좋아하는 분류 게임이 될 줄 알았는데 생각해보니 드라마 영화 만화도 좋아하긴 하네요</p>
+    <p>★ 더 글로리는 아직 안봤는데 곧 보려구요</p>
+  </div>
+  <div class="hobby" style="left: 300px">
+    <p>● 취미: 유튜브보거나 게임하기</p>
+    <p>● 특기: 자취를 하다보니 요리가 조금 늘었나? </p>
+    <p>● 좌우명: 좋은게 좋은것</p>
+  </div>
+</section>
+
+<section class="posts">
+
+  <ul>
+    <div class="post">
+      <div class="detail_box" style="top: 0;">
+        <div class="img_box"><img src="\static\img\KFPANDA.jpg">
+        </div>
+        <div class="description">
+          <section class="title_line">
+            <text class="title">쿵푸팬더</text>
+          </section>
+          <div class="content">
+            <text>가장 좋아하는 영화인 쿵푸팬더 시리즈!<br>
+              무협지에 개그와 귀여운 캐릭터들 한스푼.<br>
+              또 매력있는 악역들까지!<br>
+            </text>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="detail_box" style="top: 0px;">
+        <div class="img_box"><img src="\static\img\PIRATE.jpg" ></div>
+        <div class="description">
+          <section class="title_line">
+            <text class="title">캐리비안의 해적</text>
+          </section>
+          <div class="content">
+            <text>
+              신화 전설 속 이야기들과 능글맞은 해적 잭스패로우 선장의 조화가 잘 어울림!<br>
+              가장 좋아하는 편은 3편 '세상의 끝에서'<br>
+            </text>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="detail_box" style="top: 75px;">
+        <div class="img_box"><img src="\static\img\monster.jpg"></div>
+        <div class="description">
+          <section class="title_line">
+            <text class="title">몬스터 주식회사</text>
+          </section>
+          <div class="content">
+            <text>괴물들과 귀여운 인간애기가 나오는 만화!<br>
+              괴물들이지만 누구보다 인간적인 주인공들 덕분에 힐링하는 영화.<br>
+              근데 나는 악역으로 나오는 보라색 도마뱀 랜달이 좋더라<br>
+            </text>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ul>
+  <ul>
+    <div class="post">
+      <div class="detail_box" style="top: 0;">
+        <div class="img_box"><img src="\static\img\lovedeathrobot.jpg"></div>
+        <div class="description">
+          <section class="title_line">
+            <text class="title">러브 데스+ 로봇</text>
+          </section>
+          <div class="content">
+            <text>넷플릭스 오리지날 단편영상 모음 시리즈<br>
+              단편영화들 전부 작품성이 뛰어나지만 그 중 백미는 시즌3의 '히바로'!<br>
+              대사 한 줄 없이 오직 영상미와 연출만으로 강렬한 인상을 전해준다. 진짜 최고<br>
+            </text>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="detail_box" style="top: -70px;">
+        <div class="img_box"><img src="\static\img\lost_ark.jpg"></div>
+        <div class="description">
+          <section class="title_line">
+            <text class="title">로스트아크</text>
+          </section>
+          <div class="content">
+            <text>내가 가장 좋아하는 취미인 게임, 그중에서 가장 즐겨하는 게임인 로스트아크!<br>
+              스마일게이트에 취직하고 싶어요~
+            </text>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="detail_box" style="top: 0px;">
+        <div class="img_box"><img src="\static\img\famous_grouse.jpg"></div>
+        <div class="description">
+          <section class="title_line">
+            <text class="title">위스키</text>
+          </section>
+          <div class="content">
+            <text>하이볼로 시작했다가 어느새 그냥 위스키를 마시기 시작했다...<br>
+              완전 주린이지만 너무 쎈건 잘 안맞고 지금까지 먹어본 것 중에선 사진에 있는 '페이머스 그라우스'가 현재
+              최애~~
+            </text>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ul>
+</section>
+</section>
+
+{% endblock %}
